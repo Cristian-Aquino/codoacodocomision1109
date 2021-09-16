@@ -1,0 +1,27 @@
+#justify{
+    display: flex; /*Se posiciona uno al lado del otro*/
+    /* justify-content: center; */
+    /* justify-content: space-around; Se posicionan a una distancia igual a la otra. Con el "between" elimina el espacio entre la pared dela pagina */
+    justify-content: space-between;
+}
+
+.primer{
+    /* width: 150px;
+    height: 150px; */
+    background-color: blueviolet;
+    float: left;
+    width: 20%;
+}
+.primer:after{ /*Lo coloca despues de todo el contenido de ".primer"*/
+    content: 'Este es despues del contenido';
+    color: white;
+    font-size: 20px;
+}
+.primer::before{
+    content: 'Este esta antes del contenido';
+    color: yellow;
+    font-size: 20px;
+}
+li{
+    display: inline;
+}

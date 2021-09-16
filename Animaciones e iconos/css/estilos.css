@@ -1,0 +1,54 @@
+body{
+    background-color: rgba(137, 43, 226, 0.555);
+}
+@keyframes mover { /* declaramos el nombre de la animacion y lo que hara*/
+    from{top: 50px; color: aqua}/*Desde donde inicia el movimiento*/
+    to{top: 250px; color: black;} /*Hacia donde llega la animacion*/
+}
+#flecha{
+    position: absolute;
+    /* animation-name: mover; Llama a la animacion que quiere hacer */
+    /* animation-duration: 5s; El tiempo que durara la animacion */
+    animation: mover 5s 2s infinite reverse; /*una forma mas abreviada de ponerlo. Escribir "anim" y seleccionar el primero donde te sale todos los parametros que puede tener*/
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+}
+@keyframes fadeIn {
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
+#pelota:hover{
+    animation-name: fadeIn, otra, fadeIn; /*Con comas podemos agregarle hasta 3 animaciones en el mismo*/
+    animation-duration: 15s, 5s, 5s;
+    animation-delay: 5s,7s,2s; /* El tiempo que debe esperar para que se ejecute la animacion */
+}
+@keyframes otra {
+    0%{color: brown;}
+    25%{color: yellow;}
+    50%{color: green;}
+}
+ul li{
+    display: inline;
+    padding: 10px;
+    background-color: black;
+    color: white;
+}
+ul li:hover{
+    animation-name: menu;
+    animation-duration: 1s;
+    cursor: pointer; /*Aparece el icono de la manito del cursor*/
+    animation-iteration-count: infinite;
+}
+@keyframes menu {
+    0%{ padding: 10px;
+        background-color: black;
+        color: white;
+    }
+    100%{
+        padding: 20px;
+        background-color: white;
+        color: black;
+        box-shadow: 5px 5px 5px black;
+        border-radius: 40px; /*Le agrega un borde circular en las esquinas*/
+        font-size: 30px;
+    }
+}

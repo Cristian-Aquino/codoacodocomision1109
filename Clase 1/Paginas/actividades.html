@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividades</title>
+</head>
+<body>
+    <form action="../index.html" method="POST"> <!-- Form se utiliza para crear formularios. "action" se utiliza para indicar a que pagina te enviara luego de enviar los datos. El method POST envia los datos para que sean corrovorados (Por eso no muestra nada por pantalla)-->
+        <label for="Nombre"> Nombre </label> <!-- Texto en pantalla (como un mini titulo)-->
+        <input type="text" name="Nombre" id="Nombre"> <!-- El "input:text" es para un campo de texto. "id" lo asocia a un label y debe ingresarse el mismo nombre del label-->
+        <br> <!-- Es un salto de linea-->
+        <label for="password"> Contraseña</label>
+        <input type="password" name="password" id="password"> <!-- "type="password"" hace que no muestre las letras en pantalla. "name" es la variable en donde se guardara el texto ingresado-->
+        <br>
+        <input type="submit" value="Enviar"> <!-- El "input:submit" crea un boton. En "value" se escribe el titulo que tendra el boton-->
+    </form> 
+</body>
+</html>

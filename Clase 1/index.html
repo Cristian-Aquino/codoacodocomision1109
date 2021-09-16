@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 1</title>
+    <style> 
+        img{
+            width: 100px;
+        }
+    </style> <!-- El "style se usa para hacer cambios a todas las etiquetas que nombramos en el body"-->
+    <link rel="stylesheet" href="../css/estilos.css"> <!--"link:css" Utiliza el archivo css en esta pagina-->
+</head>
+<body>
+    <main> <!-- Es el menu--> 
+    <header> <!-- Identifica el encabezado de la pagina-->
+        <h1> Nuestras Recetas </h1>
+    </header>
+    <nav> <!-- Es donde estara el menu/navegador-->
+        <ol>
+            <li><a href="#ElImperioFinal"> El imperio final </a></li> <!-- Utilizamos el "a" para que al apretar el cuadro de texto se desplace al articulo indicado-->
+            <li> <a href="#pozo"> El pozo de la ascension </a></li>
+            <li> <a href="#heroe"> El heroe de las eras </a></li>
+        </ol>
+    </nav>
+    <!-- Con Ctrl + } comenta toda la linea del codigo  -->
+    <h1>Clase 1 </h1>
+    <h2 title="Este es un menu">Menu </h2> <!-- "title" se utiliza para mostrar un mensaje cuando dejas el cursor en el texto-->
+    <a href="./paginas/datos.html" target="_blank"> <!-- Cambia de una pagina a otra. "href" es la direccion de la pagina a la que iremos-->
+        <img src="./Imagenes/datos.jpg" alt=""> 
+    </a> 
+    <a href="https://www.google.com/" target="_blank"> <!-- "target="_blank"" Hace que la pagina se abra en otra pestaña-->
+        Ir a google
+    </a> 
+    <a href="./Paginas/Videos/tutoriales.html" target="_blank"> 
+        <img src="./Imagenes/tutoriales.png" alt=""> <!-- Luego del "href" le agregamos un text/imagen que asociaremos al link-->
+    </a> 
+    <a href="./Paginas/actividades.html" target="_blank"> 
+        <img src="./Imagenes/actividades.png" alt="">
+    </a>
+
+        <section>
+            <article id="ElImperioFinal"> <!-- el "id" sera el identificador del articulo-->
+                <h2> El imperio final</h2>
+                <h3> Durante mil años han caído cenizas del cielo. Durante mil años nada ha florecido. Durante mil años los skaa han sido esclavizados y viven en la miseria, sumidos en un miedo inevitable. Durante mil años el Lord Legislador ha reinado con poder absoluto, dominando gracias al terror, a sus poderes y a su inmortalidad, ayudado por «obligadores» e «inquisidores», junto a la poderosa magia de la alomancia.
+
+                Pero los nobles a menudo han tenido trato sexual con jóvenes skaa y, aunque la ley lo prohíbe, algunos de sus bastardos han sobrevivido y heredado los poderes alománticos: son los «nacidos de la bruma» (mistborn).
+        
+                Ahora, Kelsier, el «superviviente», el único que ha logrado huir de los Pozos de Hathsin, ha encontrado a Vin, una pobre chica skaa con mucha suerte... Tal vez los dos, con el mejor equipo criminal jamás reunido, unidos a la rebelión que los skaa intentan desde hace mil años, logren cambiar el mundo y acabar con la atroz mano de hierro del Lord Legislador.</h3>
+            </article>
+            <article id="pozo"> 
+                <h2> El pozo de la ascension</h2>
+                <h3> Durante mil años nada ha cambiado: han caído las cenizas, los skaa han sido esclavizados y el Lord Legislador ha dominado el mundo. Pero lo imposible ha sucedido. El Lord Legislador ha muerto. Sin embargo, vencer y matarlo fue la parte sencilla. El verdadero desafío será sobrevivir a las consecuencias de su caída.
+
+                Tomar el poder tal vez resultó fácil, pero ¿qué ocurre después?, ¿cómo se utiliza? La tarea de reconstruir el mundo, ahora que Kelsier no está, ha quedado en manos de Vin. Y las brumas, desde que el Lord Legislador cayó, se han vuelto cada vez más impredecibles...
+        
+                A medida que el asedio se intensifica, la antigua leyenda del Pozo de la Ascensión ofrece un único rayo de esperanza.
+        
+                En ese mundo de aventura épica, la estrategia política y religiosa debe lidiar con los siempre misteriosos poderes de la alomancia...</h3>
+            </article>
+            <article id="heroe">
+                <h2> El heroe de las eras</h2>
+                <h3> Durante mil años nada ha cambiado: han caído las cenizas, los skaa han sido esclavizados y el Lord Legislador ha dominado el mundo. Kelsier, el «superviviente», el único que ha logrado huir de los Pozos de Hathsin, junto a Vin, una pobre chica skaa, se une a la rebelión. Y por fin lo imposible sucede: por fin la revolución ha triunfado. Pero acabar con el Lord Legislador es la parte sencilla. El verdadero desafío consistirá en sobrevivir a las consecuencias de su caída... sin Kelsier.
+
+                Vin y el Rey Elend buscan en los últimos escondites de recursos del Lord Legislador y, engañado, el Rey libera del Pozo de la Ascensión algo que debería haber quedado oculto para siempre. Un enorme peligro acecha a la humanidad, y la verdadera pregunta es si conseguirán detenerlo a tiempo.</h3>
+            </article>
+        </section> 
+    </main>
+
+    <div id="principal"> <!-- El "div" se utiliza para agrupar elementos-->
+        <div class="rojo"> Uno</div>
+        <div id="negro"> Dos</div>
+        <div class="rojo"> Tres</div>
+        <div class="rojo"> Cuatro</div>
+    </div>
+        
+</body>
+</html>
