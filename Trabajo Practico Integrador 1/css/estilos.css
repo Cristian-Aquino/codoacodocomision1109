@@ -18,12 +18,28 @@
     margin-left: 30%;
 }
 
-.cabecera{
+#cabecera{
     background-image: url('../img/ba1.jpg');
-    background-size: 100%
+    background-size: 100%;
+	text-align: center;
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: relative;
 }
+
+#cabecera:before {
+	content:'';
+	position: absolute;
+    top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0,0,0,0.5);
+}
+
 .cards{
-    color: white;
+    position: relative;
     padding-bottom: 10%;
     padding-right: 7%;
     margin-left: 52%;
