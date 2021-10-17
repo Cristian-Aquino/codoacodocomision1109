@@ -10,8 +10,9 @@
 </head>
 <body>
   <div class="container-fluid">
+    <div class="row">
 
-    <nav id="navbar" class="navbar navbar-expand-lg navbar-light col-lg-12 col-sm-12 col-md-12">
+    <nav id="navbar" class="navbar navbar-expand-lg navbar-light col-lg-12 col-sm-12 col-md-12 fixed-top">
         <div class="container-fluid">
           <a class="navbar-brand">
             <img src="./img/codoacodo.png" alt="" width="120" height="70" class="d-inline-block align-text-center">
@@ -20,16 +21,16 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#"> <h7>La conferencia</h7></a>
+                <a class="nav-link active" aria-current="page" href="#laConferencia"> <h7>La conferencia</h7></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="#"><h7>Los oradores</h7></a>
+                <a class="nav-link active" href="#conoceALosOradores"><h7>Los oradores</h7></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="#"><h7>El lugar y la fecha</h7></a>
+                <a class="nav-link active" href="#lugarYFecha"><h7>El lugar y la fecha</h7></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active disabled"><h7>Conviértete en orador</h7></a>
+                <a class="nav-link active" href="#convierteteEnOrador"><h7>Conviértete en orador</h7></a>
               </li>
               <li class="nav-item">
                 <a id="ticket" class="nav-link active" href="#"><h7>Comprar tickets</h7></a>
@@ -38,20 +39,24 @@
           </div>
         </div>
       </nav>
-    <div class="cabezera bg-black flex-row-reverse">
-        <div class="cards bg-transparent text-end">
-          <div class="card-body">
-            <h2 class="card-title">Conf Bs As</h2>
-            <p class="card-text">Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad el conocimiento y experiencia de los expertos que están crreando el futuro de Internet. Ven a Conocer a miembros del evento, a otros estudiantes de Codo a Codo y los oradores de primer nivel que tenemos para ti. Te esperamos!</p>
-            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-              <a href="#" class="btn btn-primary bg-transparent btn-outline-light d-md-flex justify-content-md-end">Quiero ser orador</a>
-              <a href="#" class="btn btn-success d-md-flex justify-content-md-end">Comprar tickets</a>
-            </div>
+    
+      </div>
+<article id="laConferencia">
+    <div class="cabecera bg-black d-flex">
+      <div class="cards bg-transparent text-end d-inline-block">
+        <div class="card-body">
+          <h2 class="card-title">Conf Bs As</h2>
+          <p class="card-text">Bs As llega por primera vez a Argentina. Un evento para compartir con nuestra comunidad el conocimiento y experiencia de los expertos que están creando el futuro de Internet. Ven a Conocer a miembros del evento, a otros estudiantes de Codo a Codo y los oradores de primer nivel que tenemos para ti. Te esperamos!</p>
+          <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+            <a href="#" class="btn btn-primary bg-transparent btn-outline-light d-md-flex justify-content-md-end">Quiero ser orador</a>
+            <a href="#" class="btn btn-success d-md-flex justify-content-md-end">Comprar tickets</a>
           </div>
         </div>
+      </div>
     </div>
+  </article>
 
-    
+    <article id="conoceALosOradores">
     <div class="text-center">
       CONOCE A LOS
       <h2><p>ORADORES</p></h2>
@@ -92,8 +97,10 @@
           </div>
         </div>
       </div>
+    </article>
 
       <br>
+      <article id="lugarYFecha">
       <div>
         <div class="card mb-12">
           <div class="row g-0">
@@ -110,8 +117,10 @@
           </div>
         </div>
       </div>
+    </article>
 
       <br>
+      <article id="convierteteEnOrador">
       <div class="text-center">
         CONVIÉRTETE EN UN
         <h2><p>ORADOR</p></h2>
@@ -119,22 +128,61 @@
       </div>
 
       <div class="row">
-        <div class="col-lg-6">
-          <div class="col-lg-3">
-            <input type="text" class="">
-            <input type="text" class="">
-          </div>
+        <div class="col-md-8 col-lg-8 offset-lg-2 pt-2">
+            <div class="form-row">
+              <div class="d-flex justify-content-center">
+                <div class="col-6 col-md-5 m-3">
+                  <input type="text" class="form-control" placeholder="Nombre"></input>
+                </div>
+                <div class="col-6 col-md-5 m-3">
+                  <input type="text" class="form-control" placeholder="Apellido"></input>
+                </div>
+              </div>
+              
+              <div class="boton">
+                <textarea class="form-control" placeholder="Sobre que quieres hablar?" style="height: 150px"></textarea>
+                <p class="text-secondary">Recuerda incluir un título para tu charla</p>
+                <button id="btn-enviar" class="btn btn-primary col-12 m-1 btn-outline-light">Enviar</button>
+              </div>
 
-
-
-          <div class="form-floating col">
-            <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 150px"></textarea>
-            <label for="floatingTextarea2" class="text-secondary">Sobre qué quieres hablar?</label>
-          </div>
-          <p class="text-secondary">Recuerda incluir un título para tu charla</p>
-        </div>
+            </div>
+        </div>   
       </div>
+    </article>
 
+
+    <div class="row">
+      <nav id="footer" class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+            <ul class="navbar-nav col-6 justify-content-center">
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Preguntas frecuentes</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Contáctanos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Prensa</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Conferencias</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Términos y condiciones</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Privacidad</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="#">Estudiantes</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </div>
   </div>
 </body>
 </html>

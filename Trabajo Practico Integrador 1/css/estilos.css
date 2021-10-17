@@ -1,6 +1,7 @@
 #navbar{
     background-color: rgb(53, 58, 64);
     height: 80px;
+    
 }
 
 #navbar div div ul li a{
@@ -17,16 +18,16 @@
     margin-left: 30%;
 }
 
-.cabezera{
+.cabecera{
     background-image: url('../img/ba1.jpg');
+    background-size: 100%
 }
-
 .cards{
     color: white;
-    padding-top: 10%;
     padding-bottom: 10%;
     padding-right: 7%;
     margin-left: 52%;
+    margin-top: 23%;
 }
 
 #etiqueta{
@@ -34,5 +35,26 @@
     padding-right: 1.5%;
 }
 
+#btn-enviar{
+    background-color: rgb(150, 201, 62);
+}
 
+.boton{
+    left: 5000px;
+    padding-left: 6.5%;
+    padding-right: 6.5%;
+}
+
+#footer{
+    background-color: rgb(27, 82, 113);
+}
+
+#footer div div ul{
+    padding: 3px;
+    
+}
+#footer div div ul li{
+    margin-left: 25px;
+    margin-right: 25px;
+}
 
