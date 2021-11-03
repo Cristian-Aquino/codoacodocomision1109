@@ -93,7 +93,7 @@ const comprarTicket=()=>{
                         </div>
                     </div>
                     <div class="form-row d-flex">
-                        <button id="btn-enviar" class="btn col-6 m-1 text-white" onclick="borrar()">Borrar</button>
+                        <button id="btn-enviar" type="button" class="btn col-6 m-1 text-white" onclick="borrar()">Borrar</button>
                         <button id="btn-enviar" type="button" class="btn col-6 m-1 text-white" onclick="resumen()">Resumen</button>
                     </div>
                 </form>
