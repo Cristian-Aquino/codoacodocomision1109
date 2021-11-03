@@ -60,6 +60,9 @@
     padding-left: 6.5%;
     padding-right: 6.5%;
 }
+.ajusteTamaño{
+    width: 728px;
+}
 
 #footer{
     background-color: rgb(27, 82, 113);
@@ -72,5 +75,9 @@
 #footer div div ul li{
     margin-left: 25px;
     margin-right: 25px;
+}
+.compraticket{
+    margin-top: 100px;
+
 }
 
