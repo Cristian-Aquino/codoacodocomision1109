@@ -9,7 +9,7 @@ public class Conexion {
         Connection conexion = null;
         try{
             Class.forName(driver);
-            conexion = DriverManager.getConnection("jdbc:mysql://localhost:3306/comision1109", "Cristian0412", "123456");
+            conexion = DriverManager.getConnection("jdbc:mysql://localhost:3306/comision1109", "root", "");
         }catch(ClassNotFoundException | SQLException e){
             System.out.println(e.toString());
         }

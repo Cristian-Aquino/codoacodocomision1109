@@ -4,6 +4,9 @@
     Author     : Cristian
 --%>
 
+<%@page import="modelo.AlumnosDAO"%>
+<%@page import="modelo.Alumnos"%>
+<%@page import="java.util.List"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -30,7 +33,26 @@
                         </tr>
                     </thead>
                     <tbody>
-                        
+                        <%//Se utiliza para colocar codigo de Java
+                            List<Alumnos> resultado = null;
+                            AlumnosDAO alumno = new AlumnosDAO();
+                            resultado = alumno.listarAlumnos();
+                            for(int i = 0; i < resultado.size(); i++){
+                                String ruta = "AlumnosController?accion=modificar&id=" + resultado.get(i).getId();
+                                String rutaE = "AlumnosController?accion=eliminar&id=" + resultado.get(i).getId();
+                                %>
+                                <tr>
+                                    <td> <%=resultado.get(i).getId() %></td>
+                                    <td> <%=resultado.get(i).getNombres() %></td>
+                                    <td> <%=resultado.get(i).getApellidos() %></td>
+                                    <td> <%=resultado.get(i).getTelefono() %></td>
+                                    <td> <%=resultado.get(i).getEmail() %></td>
+                                    <td><a class="text-success" href="<%= ruta %>" >X</a></td>
+                                    <td><a class="text-danger" href="<%= rutaE %>" >X</a></td>
+                                </tr>
+                            <%    
+                            }
+                        %>
                     </tbody>
                 </table>
             </div>
